@@ -1,9 +1,10 @@
 import requests
 import json
 import re
+import os
 def node2design(base_concept, additive_concept):
     COMPLETION_URL = "https://api.openai.com/v1/chat/completions"
-    API_KEY = "sk-xxxx"
+    API_KEY = os.environ.get("OPENAI_API_KEY")
     headers = {
                 "Content-Type": "application/json",
                 "Authorization": f"Bearer {API_KEY}",

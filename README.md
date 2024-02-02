@@ -1,9 +1,5 @@
 <h1 align="center">  <span style="color:blue">WikiLink Smart</span> </h1>
 
-<h3 align="center">
-    <p>WikiLink Smart</p>
-</h3>
-
 * WikiLink Smart is a semantic network for [combinatorial creativity](https://en.wikipedia.org/wiki/Computational_creativity). 
 * It's constructed based on statistical weights using [Wikipedia data](https://dumps.wikimedia.org/) and semantic weights using [fastText](https://fasttext.cc/). It's further filtered using spaCy's[ en_core_web_trf](https://spacy.io/models/en#en_core_web_trf) model.
 * For ideas diverge and converge, it supports neighborhood exploration and shortest path finding with node masking strategy.

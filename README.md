@@ -120,7 +120,7 @@ This will start a web application page and you can explore WikiLink Smart in it.
 ```
 
 ## Contact
-If you have any questions or suggestions, feel free to open an issue or submit a pull request. We will provide timely feedback.
+If you encounter any problems when trying to run WikiLink Smart on your computer, or yoo have any questions or suggestions, feel free to open an issue or submit a pull request. I will provide timely feedback.
 
 ## Credits
 This code is developed further on [WikiLink](https://github.com/zju-d3/WikiLink).

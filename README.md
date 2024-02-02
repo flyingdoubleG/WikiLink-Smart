@@ -7,7 +7,7 @@
 <img src="README_images/algorithm2.png" alt="algorithm2" width="600">
 * For idea generation, it further incorporates LLM to generate design ideas based on concept nodes chosen by users, following a "Base Concept + Additive Concept" - "Idea Explanation" - "Design Description" chain-of-thought few-shot prompting strategy.
 
-### Examples
+### Examples of using WikiLink Smart
 neighborhood exploration start with node "hair dryer":
 
 <img src="README_images/explore.png" alt="neighborhood exploration" width="600">

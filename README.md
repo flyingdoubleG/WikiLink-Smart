@@ -7,18 +7,18 @@
 * WikiLink Smart is a semantic network for [combinatorial creativity](https://en.wikipedia.org/wiki/Computational_creativity). 
 * It's constructed based on statistical weights using [Wikipedia data](https://dumps.wikimedia.org/) and semantic weights using [fastText](https://fasttext.cc/). It's further filtered using spaCy's[ en_core_web_trf](https://spacy.io/models/en#en_core_web_trf) model.
 * For ideas diverge and converge, it supports neighborhood exploration and shortest path finding with node masking strategy.
-<img src="README_images/algorithm1.png" alt="algorithm1" width="400">
-<img src="README_images/algorithm2.png" alt="algorithm2" width="400">
+<img src="README_images/algorithm1.png" alt="algorithm1" width="600">
+<img src="README_images/algorithm2.png" alt="algorithm2" width="600">
 * For idea generation, it further incorporates LLM to generate design ideas based on concept nodes chosen by users, following a "Base Concept + Additive Concept" - "Idea Explanation" - "Design Description" chain-of-thought few-shot prompting strategy.
 
 ### Examples
 neighborhood exploration start with node "hair dryer":
 
-<img src="README_images/explore.png" alt="neighborhood exploration" width="400">
+<img src="README_images/explore.png" alt="neighborhood exploration" width="600">
 
 shortest path finding between node "toothbrush" and "3d printing":
 
-<img src="README_images/path.png" alt="shortest path finding" width="400">
+<img src="README_images/path.png" alt="shortest path finding" width="600">
 
 idea generation：
 
@@ -34,8 +34,8 @@ sketches by designer after using WikiLink Smart to generate design ideas:
 |computer mouse|lego|Lego blocks inspire creativity and customization. By combining the fun and playful aspect of Lego with the functionality of a computer mouse, the design can allow the user to create various designs and patterns on the surface of the mouse, making it a fun and personalized tool for work and play.|The Legomouse is a customizable computer mouse that can be assembled using Lego blocks. The mouse's base is designed to fit various Lego blocks, allowing the user to build and personalize different designs and shapes on the surface of the mouse. The Legomouse is ergonomically designed for comfort and precision, with two customizable buttons and a scroll wheel. It connects to the computer via USB port and is compatible with both Windows and Mac operating systems. The Legomouse is perfect for creative professionals, kids, and anyone who enjoys the fun and tactile experience of building with Lego.|
 |computer mouse|stress management|Inspired by the need for stress relief during computer use, the mouse is designed with an integrated stress ball that can be squeezed or kneaded during breaks or moments of frustration, allowing the user to release tension and improve their overall productivity and well-being.|The Stress-Relieving Computer Mouse features an ergonomic design with a soft, squeezable stress ball integrated into the body of the mouse. The ball is made from a durable, non-toxic material and provides the user with a convenient outlet for stress relief during extended computer use. The mouse is compatible with both Windows and Mac operating systems, and its advanced optical sensor ensures smooth and accurate cursor control. Additionally, the Stress-Relieving Computer Mouse comes in a variety of colors and designs to suit any personal style.|
 
-<img src="README_images/mouse_lego.png" alt="mouse inspired by lego" width="400">
-<img src="README_images/mouse_stress_management.png" alt="mouse inspired by stress management" width="400">
+<img src="README_images/mouse_lego.png" alt="mouse inspired by lego" width="600">
+<img src="README_images/mouse_stress_management.png" alt="mouse inspired by stress management" width="600">
 
 ## Getting Started
 

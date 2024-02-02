@@ -49,8 +49,8 @@ Package Requirements:
 
 Create conda environment:
 ```bash
-conda create --name marp python=3.11
-conda activate marp
+conda create --name wikilink python=3.7
+conda activate wikilink
 ```
 
 Install dependencies:

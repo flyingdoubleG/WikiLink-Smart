@@ -49,8 +49,8 @@ Package Requirements:
 
 Create conda environment:
 ```bash
-conda create --name wikilink python=3.7
-conda activate wikilink
+python -m venv venv 
+venv\Scripts\activate 
 ```
 
 Install dependencies:
@@ -65,12 +65,14 @@ To use gpt-3.5-turbo as LLM backend, make sure you have some funds (at least 3 d
 set OPENAI_API_KEY=sk-xxxx
 ```
 
-- MacOS:
-```bash
-export OPENAI_API_KEY=sk-xxxx
-```
-
 ### Run code
+
+first make directory `data/`， 
+
+```bash
+mkdir data
+```
+and download files of semantic network from [here](https://drive.google.com/drive/folders/1Ggg3_a1ThEtnnABJLxezV_uCsDr5-uj7?usp=sharing) and put them(`test6_37_28_nominus_updated_cleannameplace2.gpickle` and `word2id_from_graph.json`) in `data/` directory. 
 
 Within the repo, run the following command in your terminal:
 
@@ -78,14 +80,13 @@ Within the repo, run the following command in your terminal:
 python server.py
 ```
 
-This will start a new web page and you can explore WikiLink Smart in it.
+This will start a web application page and you can explore WikiLink Smart in it.
 
 ### Code structure 
 ```
 │   .gitattributes
 │   .gitignore
 │   app.asar
-│   compare.txt
 │   concept2design.py # LLM idea generation
 │   fb-completion.html
 │   feedback-2.html
@@ -94,33 +95,20 @@ This will start a new web page and you can explore WikiLink Smart in it.
 │   README.md
 │   requirements.txt
 │   server.py # main server for web application
-│   signup.html 
-│
-├───data # contains data of semantic network
+│   signup.html # signup web page
+├───data # data of semantic network
 │       test6_37_28_nominus_updated_cleannameplace2.gpickle
 │       word2id_from_graph.json
-│
 ├───networkanalysis
 │   │   __init__.py
-│   │
 │   ├───Analysis
-│   │       Retrievor.py
+│   │       Retrievor.py # functions for neighborhood exploration and shortest path finding
 │   │       __init__.py
-│   │
 │   └───Process_OriginalTable
-│           main.py
-│           results.txt
-│           test.py
-│           test.txt
-│           __init__.py
-│
-├───Private
-│       functions.py
-│       PF.py
-│       PubFunctions.py
-│       __init__.py
-│
-├───static    # contains static files (js, css, images)
+│           ...
+├───Private   # helper functions
+│       ...
+├───static    # static files (js, css, images)
 │       ...
 ├───templates # html templates for collecting user feedback
 │       ...
